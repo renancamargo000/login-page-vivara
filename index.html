@@ -3,45 +3,51 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Vivara - Login</title>
+    <title>Vivara - Autenticação de Rede</title>
     <link rel="stylesheet" href="style.css">
+    <link rel="shortcut icon" href="imagens/vivara-icon2.jpg" type="image/x-icon">
 </head>
 <body>
+
+    <header>
+        <div class="header">
+            <h1>-</h1>
+        </div>
+    </header>
    
     <div class="vivara-logo">
-        <img src="imagens/vivara-icon.pngss" alt="" width="200px">
+        <img src="imagens/vivara-iconSS.png" alt="" width="200px">
     </div>
-
-
-
 
     <div class="container-login">
 
-
         <div class="vivara-logo2">
-            <img src="imagens/vivara-icone2.png" alt="" width="200px" >
+            <img src="imagens/logo-vivara-preto.png" alt="Vivara Logo" width="220px" height="60px">
+            <p>Autentique-se para acessar à Rede</p>
         </div>
    
-        <div class="login">
-            <label for="usuario">Usuario</label>
-            <input type="text" id="usuario" required placeholder="Insira seu Usuario">
-        </div>
+       
+        <form action="%%AUTH_POST_URL%%" method="post">
+            <input type="hidden" name="%%REDIRID%%" value="%%PROTURI%%">
+            <input type="hidden" name="%%MAGICID%%" value="%%MAGICVAL%%">
+            <input type="hidden" name="%%METHODID%%" value="%%METHODVAL%%">
 
-        <div class="login-senha">
-        <label for="senha">Senha</label> 
-        <input type="password" placeholder="Insira sua Senha">
-        </div>    
+            <div class="login">
+                <label for="usuario">Usuário de Rede</label>
+                <input name="%%USERNAMEID%%" id="usuario" type="text" required placeholder="Insira seu Usuário">
+            </div>
 
+            <div class="login-senha">
+                <label for="senha">Senha de Rede</label> 
+                <input name="%%PASSWORDID%%" id="senha" type="password" required placeholder="Insira sua Senha">
+            </div>    
 
-        <div class="entrar">
-            <button> Entrar</button>
-        </div>
-
-
+            <div class="entrar">
+                <button type="submit">Acessar Rede</button>
+            </div>
+        </form>
 
     </div>
-    
-    <h6>Rascunho</h6>
-    
+
 </body>
 </html>
