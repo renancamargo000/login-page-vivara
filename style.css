@@ -1,0 +1,71 @@
+body{
+    background-color: #FFA687;
+}
+
+
+.vivara-logo{
+    text-align: center;
+    width: 300px;
+    height: 100px;
+}
+
+.container-login{
+    margin: 0 auto;
+    border-style: solid;
+    width: 300px;
+    border-radius: 20px;
+    height: 340px;
+    background-color: #F8F8F8;
+
+
+}
+
+.vivara-logo2{
+    text-align: center;
+    width: 300px;
+
+}
+
+.login{
+    margin: auto;
+    margin-top: 20px;
+    width: 200px;
+    
+}
+
+.login>input{
+    width: 200px;
+    height: 30px;
+    border-radius: 10px;
+    text-align: center;
+}
+
+.login-senha{
+    margin: auto;
+    width: 200px;
+    margin-top: 25px;
+}
+
+
+.login-senha>input{
+    width: 200px;
+    height: 30px;
+    border-radius: 10px;
+    text-align: center;
+}
+
+
+.entrar{
+    text-align: center;
+    margin-top: 20px;
+    
+}
+
+.entrar>button{
+    padding: 10px;
+    border-radius: 10px;
+    width: 140px;
+    background-color: #FFA687;
+}
+
+
