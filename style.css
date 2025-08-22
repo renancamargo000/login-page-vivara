@@ -1,9 +1,9 @@
 body{
-    background-color: #FFA687;
+    background-color: #4F0B05;
     background-image: url(imagens/vivara-background11.png);
     background-repeat: no-repeat;
     background-size: cover;
-    
+    margin: 0;
 
 }
 
@@ -28,7 +28,8 @@ form{
 }
 
 .container-login{
-    margin-left: 200px ;
+    margin-left: 150px ;
+    display: block;
     border-style: solid;
     width: 300px;
     border-radius: 20px;
@@ -104,4 +105,22 @@ label{
     font-size: 15px;
 }
 
+footer{
+    background-color: rgba(0, 0, 0, 0.10);
+    font-family: Arial, Helvetica, sans-serif;
+    max-height: 300px;
+    display: flex;
+}
 
+
+.site-vivara{
+    margin: 0 auto;
+    color: white;
+
+}
+
+.redes-sociais-footer{
+    margin: 0 auto;
+    color: white;
+
+}
