@@ -1,4 +1,18 @@
-html, body{
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Autenticação de Rede | Vivara</title>
+    <link rel="stylesheet" href="style.css">
+    <link rel="shortcut icon" href="imagens/vivara-icon2.jpg" type="image/x-icon">
+</head>
+<body>
+
+
+    <style>
+
+        html, body{
     margin: 0;
     background-color: #4F0B05;
     background-image: url(imagens/vivara-background11.png);
@@ -143,3 +157,65 @@ footer>a{
     color: #F8F8F8;
 }
 
+
+
+
+
+    </style>
+
+
+
+
+
+    <header>
+    
+    </header>
+   
+    <div class="vivara-logo">
+        <img src="imagens/vivara-iconSS.png" alt="" width="200px">
+    </div>
+
+    <div class="container-login">
+
+        <div class="vivara-logo2">
+            <img src="imagens/logo-vivara-preto.png" alt="Vivara Logo" width="220px" height="60px">
+            <p>Autentique-se para acessar à Rede</p>
+        </div>
+   
+       
+        <form action="%%AUTH_POST_URL%%" method="post">
+            <input type="hidden" name="%%REDIRID%%" value="%%PROTURI%%">
+            <input type="hidden" name="%%MAGICID%%" value="%%MAGICVAL%%">
+            <input type="hidden" name="%%METHODID%%" value="%%METHODVAL%%">
+
+            <div class="login">
+                <label for="usuario">Usuário de Rede</label>
+                <input name="%%USERNAMEID%%" id="usuario" type="text" required placeholder="Insira seu Usuário">
+            </div>
+
+            <div class="login-senha">
+                <label for="senha">Senha de Rede</label> 
+                <input name="%%PASSWORDID%%" id="senha" type="password" required placeholder="Insira sua Senha">
+            </div>    
+
+            <div class="entrar">
+                <button type="submit">Autenticar</button>
+            </div>
+        </form>
+
+    </div>
+
+
+    
+    <footer>
+     
+    <a href="">Visite nosso Site</a>
+    <a href="">Linkedin</a>
+    <a href="">Instagram</a>
+    <a href=""> Facebook </a>
+        
+    </footer>
+    
+
+</body>
+</html>
